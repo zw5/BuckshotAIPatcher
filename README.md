@@ -1,39 +1,16 @@
-# Delta Patcher [![Build](https://github.com/marco-calautti/DeltaPatcher/actions/workflows/release.yml/badge.svg)](https://github.com/marco-calautti/DeltaPatcher/actions/workflows/release.yml) [![Codacy Badge](https://app.codacy.com/project/badge/Grade/bdfed52f118c4199ad0d828520f29b61)](https://www.codacy.com/gh/marco-calautti/DeltaPatcher/dashboard?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=marco-calautti/DeltaPatcher&amp;utm_campaign=Badge_Grade)
+# Buckshot Roulette AI Patcher
 
-![ScreenShot](https://i.imgur.com/dQmTusx.png)
+This is a fork of Delta Patcher, a multi-platform patcher for mods. This fork is specifically designed to patch the AI in the game Buckshot Roulette, a turn-based strategy game where you have to outsmart your opponents in a deadly game of Russian roulette.
 
-Delta Patcher is a GUI software that is able to create and apply xdelta patches as the ones supported by the xdelta tool developed by Joshua McDonald. 
+The original AI in Buckshot Roulette is very easy to beat, as it does not take into account the probability of each chamber being loaded, the number of players left, or the risk-reward ratio of each move. This patcher aims to improve the AI by making it more intelligent, adaptive, and unpredictable.
 
-Delta patcher is fully self-contained and does not depend on the xdelta3 tool at all. This sets Delta Patcher apart from all other tools out there that are just frontends to the xdelta3 binary. Moreover, such frontends do not support some options of the encoder/decoder at all, like main and secondary compression level for encoding and checksum checking for decoding/encoding. Also, they are all written in .NET (0_0).
+To use this patcher, you need to have the original Buckshot Roulette EXE file and the AI patch file. You can download the patch file from the Releases section of this repository. The patcher will create a new EXE file with the modified AI, which you can then play on your computer as normal.
 
-So, this tool was designed to be self-contained (for Windows, MacOS and GTK-based Linux systems). It's written in C++ using wxWidgets for the GUI components and all the needed libraries are statically linked to the executable (except for GTK for linux builds). Last, but not the least, Delta Patcher is GPL2'd and cross-platform: it runs fine on Windows, Linux and MacOS.
+To run the patcher, follow these steps:
 
-## How to build
-Delta Patcher has been successfully built on Windows 10, Ubuntu 22.04, Fedora 36 and MacOS 10.14+.
+- Download and extract the patcher for your operating system (Windows, Linux, or Mac).
+- Launch the patcher executable and select the original Buckshot Roulette ROM file and the AI patch file.
+- Click on "Apply Patch" and wait for the process to finish.
+- Enjoy the enhanced AI in Buckshot Roulette!
 
-### Windows and MacOS
-
--   On Windows, install CMake, git and Visual Studio with the Desktop C++ Development tools (including the WindowsSDK package).
--   On MacOS install the Xcode command line tools (or Xcode itself), CMake and git.
--   git clone --recurse-submodules https://github.com/marco-calautti/DeltaPatcher.git
--   cd DeltaPatcher
--   cmake -B build -DCMAKE_BUILD_TYPE=Release -DwxBUILD_SHARED=OFF -DwxBUILD_USE_STATIC_RUNTIME=ON
--   cmake --build build --config Release 
-
-For an x86 (32bit) build on Windows do:
-- cmake -B build -A Win32 -DCMAKE_BUILD_TYPE=Release -DwxBUILD_SHARED=OFF -DwxBUILD_USE_STATIC_RUNTIME=ON
-
-The executable should be found in build/app/Release/ on Windows and in build/app on MacOS
-
-### Linux
-
--   First install dependencies:
-    -   Ubuntu: sudo apt install build-essential cmake git libgtk-3-dev
-    -   Fedora: sudo dnf install g++ make cmake git gtk3-devel
-
--   git clone --recurse-submodules https://github.com/marco-calautti/DeltaPatcher.git
--   cd DeltaPatcher
--   cmake -B build -DCMAKE_BUILD_TYPE=Release -DwxBUILD_SHARED=OFF
--   cmake --build build --config Release
-
-The final binary should be found in build/app/
+Note: This patcher is not affiliated with or endorsed by the developers of Buckshot Roulette. Use it at your own risk and discretion.
