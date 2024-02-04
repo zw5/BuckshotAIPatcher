@@ -15,4 +15,4 @@ To run the patcher, follow these steps:
 
 Note: This patcher is not affiliated with or endorsed by the developers of Buckshot Roulette. Use it at your own risk and discretion.
 
-Huge shotout to [ITR3](https://github.com/ITR3)
+Huge shotout to [ITR3](https://github.com/ITR3) for designing the improved AI logic.
