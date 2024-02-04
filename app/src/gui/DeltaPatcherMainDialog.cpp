@@ -34,7 +34,7 @@ MainDialog( parent ), decodeMode(true), pendingPatchPath(patchName)
 #ifdef __DP_DECODE_ONLY__
 	SetTitle(_("Delta Patcher Lite"));
 #else
-	SetTitle(_("Delta Patcher"));
+	SetTitle(_("Buckshot Patcher"));
 #endif
 
 	
@@ -60,9 +60,8 @@ MainDialog( parent ), decodeMode(true), pendingPatchPath(patchName)
 	logCtrl->SetSizeHints(minLogCtrlSize);
 
 	//checking release type
-#ifdef __DP_DECODE_ONLY__
+
 	operationButton->Show(false);
-#endif
 
 	decodePanel->SwitchTo();
 	ShowHideLog();

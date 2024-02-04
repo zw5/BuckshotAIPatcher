@@ -31,7 +31,7 @@ DecodePanel( parent ), logger( l )
 	applyOptionsMenu = new wxMenu();
 	keepOriginalCheck = new wxMenuItem( applyOptionsMenu, wxID_ANY, wxString( _("Backup original file") ) , wxEmptyString, wxITEM_CHECK );
 	applyOptionsMenu->Append( keepOriginalCheck );
-	
+	keepOriginalCheck->Check( true );
 	checksumCheck = new wxMenuItem( applyOptionsMenu, wxID_ANY, wxString( _("Checksum validation") ) , wxEmptyString, wxITEM_CHECK );
 	applyOptionsMenu->Append( checksumCheck );
 	checksumCheck->Check( true );
