@@ -14,3 +14,5 @@ To run the patcher, follow these steps:
 - Enjoy the enhanced AI in Buckshot Roulette!
 
 Note: This patcher is not affiliated with or endorsed by the developers of Buckshot Roulette. Use it at your own risk and discretion.
+
+Huge shotout to [ITR3](https://github.com/ITR3)
